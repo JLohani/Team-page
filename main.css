@@ -102,6 +102,10 @@
         text-align: left;
     }
     
+    .team-member:nth-child(5){
+        margin-top: 0px;
+    }
+    
     .team-member:nth-child(2),
     .team-member:nth-child(4),
     .team-member:nth-child(6){
