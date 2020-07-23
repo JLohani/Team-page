@@ -29,10 +29,8 @@
     margin-top: 30px;
     width: 65%;
     display: grid;
-    column-gap: 50px;
-    
+    column-gap: 50px;  
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
 }
 
 .team-member{
@@ -62,4 +60,67 @@
     font-size: 20px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .headder{
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        /* border: solid 1px black; */
+    }
+
+    .headder-top{
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .headder-bottom{
+        width: 70%;
+    }
+
+    .bottom-content{
+        width:80%;
+        font-size: 13px;
+    }
+
+    .pics{
+        grid-template-columns: 1fr 1fr;
+       
+        width: 100%;
+    }
+
+    .team-member{
+        /* border: solid rgb(4, 4, 255) 2px; */
+        display: grid;
+        grid-template-columns: 85% 15%;
+        height: 200px;
+        text-align: left;
+    }
+    
+    .team-member:nth-child(2),
+    .team-member:nth-child(4),
+    .team-member:nth-child(6){
+        margin-top: 70px;
+    }
+    
+    .member-photo{
+        width: 75%;
+        height: 150px;
+    }
+    
+    .member-name{
+        font-size: 10px;
+    }
+    
+    .member-position{
+        /* border: solid black 1px; */
+        font-size: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
