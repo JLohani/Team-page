@@ -62,7 +62,7 @@
     text-orientation: mixed;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 420px) {
 
     .headder{
         margin-top: 25px;
